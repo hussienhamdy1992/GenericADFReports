@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="11.1.2.62.76" id="DataBindings"
+             SeparateXMLFiles="false" Package="view" ClientType="Generic">
+  <pageMap>
+    <page path="/genrateReport.jsf" usageId="view_genrateReportPageDef"/>
+    <page path="/ShowDepEmploeyees.jsf" usageId="view_ShowDepEmploeyeesPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="view_genrateReportPageDef" path="view.pageDefs.genrateReportPageDef"/>
+    <page id="view_ShowDepEmploeyeesPageDef" path="view.pageDefs.ShowDepEmploeyeesPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="AppModuleDataControl" Package="model.AM"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="AppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>
